@@ -1,0 +1,119 @@
+.logo {
+    display: block;
+    max-width: 50px;
+    max-height: 50px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 170px;
+    color: white;
+    font-size: 5em;
+    text-shadow: 0 0 50px rgb(215, 212, 19), 0 0 100px rgb(74, 118, 205), 0 0 150px rgb(255, 55, 0), 0 0 200px #0f0, 0 0 250px #0f0;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+body {
+    /*background: linear-gradient(rgb(200, 200, 200), rgb(173, 36, 61));*/
+    background: #112 url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg) center no-repeat;
+    background-size: cover;
+    margin: 0;
+    box-sizing: border-box;
+    margin: 25px 25px;
+}
+
+h1 {
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 10px;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 3.2rem;
+}
+
+.neon-text {
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+}
+
+.container {
+    background: linear-gradient(rgb(100, 200, 200), purple);
+    border-radius: 10px;
+    height: 80vh;
+    width: 70vh;
+    display: block;
+    margin: auto;
+    overflow-y: auto;
+    animation: pulsate 1.5s infinite alternate;
+    /* border: 0.2rem solid #fff; */
+    border-radius: 2rem;
+    padding: 0.4em;
+    /* box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #bc13fe, 0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe; */
+}
+
+.message {
+    border: 1px solid black;
+    display: inline;
+    background-color: rgb(198, 187, 187);
+    padding: 5px 5px;
+    margin: 10px 8px;
+    border-radius: 5px;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+.send-message {
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+#text_box {
+    width: 59vh;
+    background-color: bisque;
+    border-radius: 12px;
+    height: 34px;
+    margin-top: 15px;
+}
+
+#send-box {
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 40px;
+    width: 60px;
+}
+
+@keyframes flicker {
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+        text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px #0fa, 0 0 80px #0fa, 0 0 90px #0fa, 0 0 100px #0fa, 0 0 150px #0fa;
+    }
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+}
